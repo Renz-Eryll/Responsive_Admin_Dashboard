@@ -11,13 +11,11 @@ import {
   Employees,
   Pyramid,
   Customers,
-  Kanban,
   Line,
   Area,
   Bar,
   Pie,
   Financial,
-  ColorPicker,
   ColorMapping,
   Editor,
 } from "./pages";
@@ -94,10 +92,9 @@ const App = () => {
                 <Route path="/customers" element={<Customers />} />
 
                 {/* apps  */}
-                <Route path="/kanban" element={<Kanban />} />
+
                 <Route path="/editor" element={<Editor />} />
                 <Route path="/calendar" element={<Calendar />} />
-                <Route path="/color-picker" element={<ColorPicker />} />
 
                 {/* charts  */}
                 <Route path="/line" element={<Line />} />

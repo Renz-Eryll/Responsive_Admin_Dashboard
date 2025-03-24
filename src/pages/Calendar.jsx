@@ -14,7 +14,6 @@ import {
 } from "@syncfusion/ej2-react-schedule";
 import { DatePickerComponent } from "@syncfusion/ej2-react-calendars";
 
-import { scheduleData } from "../data/dummy";
 import { Header } from "../components";
 
 // eslint-disable-next-line react/destructuring-assignment
@@ -40,7 +39,7 @@ const Scheduler = () => {
         height="650px"
         ref={(schedule) => setScheduleObj(schedule)}
         selectedDate={new Date(2021, 0, 10)}
-        eventSettings={{ dataSource: scheduleData }}
+        eventSettings={{}}
         dragStart={onDragStart}
       >
         <ViewsDirective>

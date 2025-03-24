@@ -1,9 +1,8 @@
 import React from "react";
 import { Link, NavLink } from "react-router-dom";
-import { SiShopware } from "react-icons/si";
+import { TbLayoutDashboard } from "react-icons/tb";
 import { MdOutlineCancel } from "react-icons/md";
 import { TooltipComponent } from "@syncfusion/ej2-react-popups";
-
 import { links } from "../data/dummy";
 import { useStateContext } from "../contexts/ContextProvider";
 
@@ -30,9 +29,9 @@ const Sidebar = () => {
             <Link
               to="/"
               onClick={handleCloseSideBar}
-              className="items-center gap-3 ml-3 mt-4 flex text-xl font-extrabold tracking-tight dark:text-white text-slate-900"
+              className="items-center gap-3 ml-3 mt-4 flex text-4xl font-extrabold tracking-tight dark:text-white text-slate-900"
             >
-              <SiShopware /> <span>Dashboard</span>
+              <TbLayoutDashboard />
             </Link>
             <TooltipComponent content="Menu" position="BottomCenter">
               <button
